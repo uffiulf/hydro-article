@@ -1,0 +1,97 @@
+{
+    "nettside": {
+        "tittel": "Norsk Hydro Cyberattack Scrollytelling",
+        "beskrivelse": "En interaktiv scrollytelling-artikkel som dramatiserer og forklarer dataangrepet på Norsk Hydro i 2019. Nettsiden bruker animasjoner og visuelle effekter for å engasjere leseren gjennom tidslinjer, forklaringer og data.",
+        "teknologi_og_verktoy": [
+            "React (v19) - Frontend-rammeverk",
+            "Vite - Byggverktøy og utviklingsserver",
+            "TypeScript - Typesikkert språk",
+            "GSAP (GreenSock Animation Platform) - Avanserte scroll-baserte animasjoner (ScrollTrigger)",
+            "Framer Motion - Deklarative animasjoner for UI-elementer",
+            "Recharts - Datavisualisering (grafer)",
+            "Sass - CSS-preprosessor (tilgjengelig, men vanilla CSS/inline styles er primært brukt i komponentene)"
+        ],
+        "innhold_og_struktur": [
+            {
+                "komponent": "HookIntro",
+                "beskrivelse": "Første seksjon som setter stemningen. Bruker parallax-effekt på bakgrunnen og fader ut tekst ved scrolling.",
+                "innhold": [
+                    "Tittel: 'Natten da alt gikk i svart'",
+                    "Undertittel: 'Et vanlig nattskift. En skjerm som fryser. Så kaos.'",
+                    "Visuelt element: 'Systemfeil' varselboks",
+                    "Bakgrunn: Mørk gradient med binærkode (01010101) som silhuett"
+                ],
+                "visuelt": "Mørkt, dramatisk, 'hacker'-estetikk med rød aksentfarge for feilmelding."
+            },
+            {
+                "komponent": "TimelineAttack",
+                "beskrivelse": "En tidslinje som viser hvordan angrepet utfoldet seg. Seksjonen 'pinner' (låses) mens man scroller gjennom hendelsene.",
+                "innhold": [
+                    "Des 2018: Inntrengningen (infisert e-post)",
+                    "18. Mars 23:00: Angrepet starter",
+                    "19. Mars 00:00: Oppdagelsen (LockerGoga-viruset)",
+                    "19. Mars 04:00: Krisealarm ('Ingen øvelse')",
+                    "19. Mars 07:30: Offentliggjøring"
+                ],
+                "visuelt": "Delt skjerm. Venstre side viser klokkeslett og status. Høyre side er en scrollbar liste med hendelser. Aktiv hendelse lyser opp."
+            },
+            {
+                "komponent": "RansomwareExplainer",
+                "beskrivelse": "Forklarer hva LockerGoga-viruset er og hvordan det fungerer.",
+                "innhold": [
+                    "Tittel: 'Hva er LockerGoga?'",
+                    "Kort 1: 'Inntrengningen' (E-post fra betrodd kunde, trojaner)",
+                    "Kort 2: 'LockerGoga' (Ingen C&C, gyldige sertifikater)",
+                    "Kort 3: 'Konsekvensen' (22 000 PC-er, manuell drift)"
+                ],
+                "visuelt": "Grid-layout med kort som animeres inn (staggered). Ikoner for hvert konsept."
+            },
+            {
+                "komponent": "ImpactData",
+                "beskrivelse": "Presenterer de økonomiske og operasjonelle konsekvensene gjennom grafer.",
+                "innhold": [
+                    "Tittel: 'Prisen for stillhet'",
+                    "Søylediagram (BarChart): Økonomisk tap (Uke 1: 325, Q1: 425, Q2: 600, Total: 800 MNOK)",
+                    "Linjediagram (LineChart): Produksjonskapasitet Extruded Solutions (0% -> 100%)",
+                    "Fremhevet tall: 800 MNOK",
+                    "Markedsreaksjon: Hydro-aksjen (-3.4% -> -0.8%), Aluminiumspris (+1.2%)",
+                    "Salg: Volumfall fra 362k til 333k tonn i Q1"
+                ],
+                "visuelt": "Mørk bakgrunn med grafer i rødt (tap) og blått (produksjon). Interaktive tooltips på grafene."
+            },
+            {
+                "komponent": "HumanStories",
+                "beskrivelse": "Fokuserer på menneskene som ble berørt, med sitater fra ansatte.",
+                "innhold": [
+                    "Tittel: 'Stemmer fra gulvet'",
+                    "Sitat: 'Vi er utsatt for et kraftig cyberangrep og dette er ingen øvelse!' (Kollega til CEO)",
+                    "Sitat: 'Ingen ler av papirarkivene etter dataangrepet.' (Jan 'Dino-Star' Verslyppe)",
+                    "Plassholder for bilde av manuelt arbeid"
+                ],
+                "visuelt": "Sitatblokker med venstrejustert blå linje. Rolig og personlig preg."
+            },
+            {
+                "komponent": "RecoveryFuture",
+                "beskrivelse": "Avslutning som handler om løsningen og veien videre.",
+                "innhold": [
+                    "Tittel: 'Å snu tidevannet'",
+                    "Seksjon: 'Tre avgjørende valg' (Ingen løsepenger, Microsoft DART, Åpenhet)",
+                    "Seksjon: 'The Gold Standard' (Internasjonal anerkjennelse, arrestasjoner)",
+                    "Liste over lærdommer"
+                ],
+                "visuelt": "Bakgrunnen skifter gradvis fra sort til mørkeblå for å symbolisere håp og løsning ('lyset i enden av tunnelen')."
+            }
+        ],
+        "design_og_estetikk": {
+            "fargepalett": [
+                "#000000 (Sort)",
+                "#111111 (Mørk grå)",
+                "#ff4444 (Rød - Fare/Feil)",
+                "#00509e (Hydro-blå - Identitet/Løsning)",
+                "#ffffff (Hvit - Tekst)"
+            ],
+            "typografi": "Sans-serif fonter, store overskrifter (clamp-funksjon for responsivitet), monospace for tidsstempler/kode.",
+            "stemning": "Seriøs, dramatisk i starten, som går over til informativ og til slutt håpefull."
+        }
+    }
+}
