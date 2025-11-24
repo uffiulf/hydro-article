@@ -37,7 +37,7 @@ const HumanStories: React.FC = () => {
 
                 <div style={{ height: '400px', margin: '4rem 0', borderRadius: '8px', overflow: 'hidden' }}>
                     <img 
-                        src="/arbeidere-manuelle-verktoy.jpg" 
+                        src={`${import.meta.env.BASE_URL}arbeidere-manuelle-verktoy.jpg`}
                         alt="Foto av arbeidere som bruker manuelle verktøy"
                         style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                     />
