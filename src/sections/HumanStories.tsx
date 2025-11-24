@@ -35,8 +35,12 @@ const HumanStories: React.FC = () => {
                     role="Klokken 04:00, 19. mars"
                 />
 
-                <div style={{ height: '400px', background: '#222', margin: '4rem 0', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '8px' }}>
-                    <span style={{ opacity: 0.3 }}>[Plassholder: Foto av arbeidere som bruker manuelle verktøy]</span>
+                <div style={{ height: '400px', margin: '4rem 0', borderRadius: '8px', overflow: 'hidden' }}>
+                    <img 
+                        src="/arbeidere-manuelle-verktoy.jpg" 
+                        alt="Foto av arbeidere som bruker manuelle verktøy"
+                        style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                    />
                 </div>
 
                 <QuoteBlock
